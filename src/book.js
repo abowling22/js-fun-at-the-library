@@ -12,8 +12,9 @@ function buildMainCharacter(name, age, pronouns) {
   return mainCharacter
 }
 
-function saveReview() {
-  return
+function saveReview(string, array) {
+  array.push(`${string}`)
+  return saveReview
 }
 
 
