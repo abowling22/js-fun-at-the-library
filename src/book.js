@@ -20,9 +20,19 @@ function saveReview(string, array) {
 
 /// if statement is saying that if the array does not include a string push it to the array of revies, if it does do nothing. 
 
-function calculatePageCount() {
+function calculatePageCount(title) {
+  var result = title.length * 20
+  return result
+} 
 
-  
+function writeBook(title, character, genre) {
+  var book = {
+    title: title,
+    mainCharacter: character,
+    pageCount: calculatePageCount(title),
+    genre: genre
+  }
+  return book
 }
 
 
@@ -31,6 +41,6 @@ module.exports = {
   buildMainCharacter,
   saveReview,
   calculatePageCount,
-  // writeBook,
+  writeBook,
   // editBook
 }
