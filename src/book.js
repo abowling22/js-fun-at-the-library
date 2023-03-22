@@ -13,8 +13,16 @@ function buildMainCharacter(name, age, pronouns) {
 }
 
 function saveReview(string, array) {
-  array.push(`${string}`)
-  return saveReview
+  if (!array.includes(string)){
+    array.push(string)
+  }
+}
+
+/// if statement is saying that if the array does not include a string push it to the array of revies, if it does do nothing. 
+
+function calculatePageCount() {
+
+  
 }
 
 
@@ -22,7 +30,7 @@ module.exports = {
   createTitle,
   buildMainCharacter,
   saveReview,
-  // calculatePageCount,
+  calculatePageCount,
   // writeBook,
   // editBook
 }
