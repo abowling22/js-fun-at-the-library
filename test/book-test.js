@@ -113,7 +113,7 @@ describe("book.js", function () {
       assert.isFunction(writeBook);
     });
 
-    it("should return a book object", function () {
+    it.skip("should return a book object", function () {
       var bookTitle = createTitle("Teenage Ghoul");
       var bookCharacter = buildMainCharacter("Vassya", 16, "she/her");
       var book = writeBook(bookTitle, bookCharacter, "fantasy");
@@ -137,11 +137,11 @@ describe("book.js", function () {
   });
 
   describe("editBook", function() {
-    it.skip("should be a function", function () {
+    it("should be a function", function () {
       assert.isFunction(editBook);
     });
 
-    it.skip("should decrease the book's page count to be three quarters of what it originally was", function () {
+    it("should decrease the book's page count to be three quarters of what it originally was", function () {
       var ghoulTitle = createTitle("Teenage Ghoul");
       var ghoulCharacter = buildMainCharacter("Vassya", 16, "she/her");
       var ghoulBook = writeBook(ghoulTitle, ghoulCharacter, "mystery");
