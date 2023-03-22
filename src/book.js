@@ -35,6 +35,18 @@ function writeBook(title, character, genre) {
   return book
 }
 
+function editBook(changedBook) {
+  var decreasedBookPages = changedBook.pageCount * .25
+  var theValueIWant = changedBook.pageCount - decreasedBookPages
+  changedBook.pageCount = theValueIWant
+}
+
+/// we are ediitng a book created by our create book function. 
+// we want to change the information in a specific key to be decreased by 25%
+//
+
+
+
 
 module.exports = {
   createTitle,
@@ -42,5 +54,6 @@ module.exports = {
   saveReview,
   calculatePageCount,
   writeBook,
-  // editBook
+  editBook
 }
+
