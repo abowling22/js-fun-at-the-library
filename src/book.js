@@ -12,10 +12,15 @@ function buildMainCharacter(name, age, pronouns) {
   return mainCharacter
 }
 
+function saveReview() {
+  return
+}
+
+
 module.exports = {
   createTitle,
   buildMainCharacter,
-  // saveReview,
+  saveReview,
   // calculatePageCount,
   // writeBook,
   // editBook
