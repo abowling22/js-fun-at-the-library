@@ -81,18 +81,20 @@ if (pages < 1000) {
 
 // Create a new variable "books" and assign it to an Array of 5 different
 // book titles, represented by their names as Strings.
-
+var books = ["title 1", "title 2", "title 3", "title 4", "title 5"]
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
-
+//console.log(books[2])
 
 // Create a new variable "belowTwoHundred" and assign it to an Array of 12
 // different numbers below two hundred.
+var belowTwoHundred = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 
 
 // Write the code to access the 5th element of the array, using bracket notation.
 
+//console.log(belowTwoHundred[4])
 
 //------------------------- Objects -------------------------//
 
@@ -101,5 +103,14 @@ if (pages < 1000) {
 // the value for hasThesaurus should be false
 
 
+var dictionary = {
+  name: "Webster's",
+  hasThesaurus: false
+}
+
 // Write the code to add the key of pageCount, with the value of 720. Use dot
 // notation to do this. DO NOT modify your code from above.
+
+dictionary.pageCount = 720
+
+console.log(dictionary)
