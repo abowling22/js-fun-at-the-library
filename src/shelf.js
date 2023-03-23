@@ -39,9 +39,27 @@ function unshelfBook(bookTitle, array) {
 // then splice 
 //loop throgh the array to start using a for loop although i dont think this is necessary
 
-function listTitles() {
+function listTitles(bookShelf) {
+  var bookTitles = []
+  for (var i = 0; i < bookShelf.length; i++) {
+    bookTitles.push(bookShelf[i].title)
+  }
+  
+  return bookTitles.join(", ")
 
 }
+
+  // for (i = 0; i < bookShelf.length; i++) { 
+//  var titles = bookShelf[i].title
+
+//console.log(titles)
+  //console.log(array[i].title)
+  //if (array[i].includes)}
+
+//go through the array with a for loop
+// and return all the titles looped through the array in an array will use .key to do this
+// 
+
 
 
 module.exports = {
