@@ -18,7 +18,7 @@ function saveReview(string, array) {
   }
 }
 
-/// if statement is saying that if the array does not include a string push it to the array of revies, if it does do nothing. 
+/// if statement is saying that if the array does not include a string push it to the array of reviews, if it does do nothing. 
 
 function calculatePageCount(title) {
   var result = title.length * 20
