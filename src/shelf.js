@@ -35,13 +35,18 @@ function unshelfBook(bookTitle, array) {
 // identify a book by its key in this case title
 
 // what i think youll do is similar to 8 on book, where we want to use includes to produce a  true or false result
-// if object.key = param1 in mycase bookTitle
+// if object.key = true from the includes  in mycase bookTitle
 // then splice 
 //loop throgh the array to start using a for loop although i dont think this is necessary
+
+function listTitles() {
+
+}
+
 
 module.exports = {
   shelfBook,
   unshelfBook,
-  // listTitles,
+  listTitles,
   // searchShelf
 };

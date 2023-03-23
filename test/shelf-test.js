@@ -140,7 +140,7 @@ describe("shelf.js", function() {
       assert.deepEqual(sciFiShelf, [endersGame]);
     });
 
-    it.skip("should remove a book on a different shelf by name", function() {
+    it("should remove a book on a different shelf by name", function() {
       var bossypants = {
         title: "Bossypants",
         mainCharacter: { name: "Tina Fey", age: 50, pronouns: "she/her" },
@@ -168,7 +168,7 @@ describe("shelf.js", function() {
   });
 
   describe("listTitles", function () {
-    it.skip("should be a function", function () {
+    it("should be a function", function () {
       assert.isFunction(listTitles);
     });
 
